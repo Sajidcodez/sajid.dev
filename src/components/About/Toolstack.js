@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
 import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
 import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
 
 function Toolstack() {
   return (
@@ -22,8 +22,8 @@ function Toolstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
+        <FaGithub fontSize={"28px"} color="#FFFFFF" />
+        <div className="tech-icons-text">GitHub</div>
       </Col>
     </Row>
   );

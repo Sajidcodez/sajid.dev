@@ -2,92 +2,90 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import smartbot from "../../Assets/Projects/smartbot.png";
+import noteBeats from "../../Assets/Projects/NoteBeats_pic.png";
+import flappyBird from "../../Assets/Projects/Flappy_Bird.png";
+import rebin from "../../Assets/Projects/Rebin.jpeg";
+import co2Leaderboard from "../../Assets/Projects/Co2lb.png";
+import weatherForecast from "../../Assets/Projects/Weather_forecast.png";
+import Reveal from "../Reveal";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Reveal>
+          <h1 className="project-heading">
+            My Recent <strong className="purple">Works </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Here are a few projects I've worked on recently.
+          </p>
+        </Reveal>
+        <Reveal>
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={smartbot}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Smart Bot"
+              description="A chatbot that helps users get quick answers and information through simple conversation."
+              ghLink="https://github.com/Sajidcodez/SmartBot.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={noteBeats}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Note Beats"
+              description="A creative app that turns study notes into lyrics and audio in a fun, interactive way."
+              ghLink="https://github.com/Sajidcodez/NoteBeats.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={flappyBird}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Flappy Bird 2.0"
+              description="A refreshed Flappy Bird remake with updated visuals and gameplay flow."
+              ghLink="https://github.com/Sajidcodez/FlappyBird-2.0.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={rebin}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Rebin"
+              description="A project that helps make waste sorting and recycling easier to understand and manage."
+              ghLink="https://github.com/Sajidcodez/Rebin.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={co2Leaderboard}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="CO2 Leaderboard"
+              description="A project that tracks and compares carbon emissions across different states and shows the data in a simple, easy-to-read way."
+              ghLink="https://github.com/Sajidcodez/Co2-Leaderboard.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={weatherForecast}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Weather Forecast"
+              description="A modern weather app that lets users search for any city, view real-time forecasts, and explore detailed weather information in a clean, interactive interface."
+              ghLink="https://github.com/Sajidcodez/Web102-Project-week7.git"
             />
           </Col>
-        </Row>
+          </Row>
+        </Reveal>
       </Container>
     </Container>
   );

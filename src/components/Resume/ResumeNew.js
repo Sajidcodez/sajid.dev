@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import pdf from "../../Assets/Sajid Amin Latest Resume 8_7_26.docx.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import Reveal from "../Reveal";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -19,35 +20,43 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+        <Reveal>
+          <Row style={{ justifyContent: "center", position: "relative" }}>
+            <Button
+              variant="primary"
+              as="a"
+              href={pdf}
+              download="Sajid_Amin_Resume.pdf"
+              style={{ maxWidth: "250px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
+          </Row>
+        </Reveal>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+        <Reveal>
+          <Row className="resume">
+            <Document file={pdf} className="d-flex justify-content-center">
+              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            </Document>
+          </Row>
+        </Reveal>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+        <Reveal>
+          <Row style={{ justifyContent: "center", position: "relative" }}>
+            <Button
+              variant="primary"
+              as="a"
+              href={pdf}
+              download="Sajid_Amin_Resume.pdf"
+              style={{ maxWidth: "250px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
+          </Row>
+        </Reveal>
       </Container>
     </div>
   );
