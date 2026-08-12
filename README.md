@@ -31,7 +31,7 @@ The development server runs at [http://localhost:3000](http://localhost:3000).
 ## Contact
 
 - GitHub: [@Sajidcodez](https://github.com/Sajidcodez)
-- LinkedIn: [sajid-amin](https://www.linkedin.com/in/sajid-amin)
+- LinkedIn: [sajid-amin](https://www.linkedin.com/in/sajid-amin-ny)
 
 ## Note
 
