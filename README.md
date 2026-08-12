@@ -1,14 +1,6 @@
 # Sajid Amin — Portfolio
 
-Personal portfolio website for **Sajid Amin**, featuring a short introduction, technical skills, selected projects, and a downloadable résumé.
-
-## Built with
-
-- React 17 and React Router 6
-- React Bootstrap and Bootstrap
-- React Icons
-- React PDF
-- tsParticles
+Personal portfolio website for **Sajid Amin**
 
 ## Getting started
 
