@@ -19,7 +19,7 @@ function Reveal({ children, className = "" }) {
       },
       {
         threshold: 0.15,
-        rootMargin: "0px 0px -10% 0px",
+        rootMargin: "0px 0px -40% 0px",
       }
     );
 
